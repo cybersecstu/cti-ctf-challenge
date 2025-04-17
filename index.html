@@ -11,12 +11,19 @@
         }
         .terminal {
             background-color: #000;
-            color: #00FF00; /* Green text */
+            color: #00FF00;
             font-family: 'Courier New', Courier, monospace;
             padding: 20px;
-            min-height: 100vh; /* Full viewport height */
+            min-height: 100vh;
+        }
+        .terminal-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .terminal-text {
             font-size: 16px;
-            line-height: 1.5;
+            margin-bottom: 10px;
         }
         .terminal a {
             color: #00FF00;
@@ -25,14 +32,12 @@
         .terminal a:hover {
             text-decoration: underline;
         }
-        .ascii-art {
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
     <div class="terminal">
-        <pre class="ascii-art">
+        <div class="terminal-header">
+            <pre>
   /$$$$$$   /$$                                /$$$$$$  /$$$$$$$$ /$$$$$$        /$$$$$$  /$$$$$$$$ /$$$$$$$$
  /$$__  $$ | $$                               /$$__  $$|__  $$__/|_  $$_/       /$$__  $$|__  $$__/| $$_____/
 | $$  \__//$$$$$$   /$$   /$$  /$$$$$$$      | $$  \__/   | $$     | $$        | $$  \__/   | $$   | $$      
@@ -40,18 +45,17 @@
  \____  $$ | $$    | $$  | $$|  $$$$$$       | $$         | $$     | $$        | $$         | $$   | $$__/   
  /$$  \ $$ | $$ /$$| $$  | $$ \____  $$      | $$    $$   | $$     | $$        | $$    $$   | $$   | $$      
 |  $$$$$$/ |  $$$$/|  $$$$$$/ /$$$$$$$/      |  $$$$$$/   | $$    /$$$$$$      |  $$$$$$/   | $$   | $$      
- \______/   \___/   \______/ |_______/        \______/    |__/   |______/       \______/    |__/   |__/      
-                                                                                                                                                                                                                   
-                                                                                                             
-        </pre>
-        <pre>
-### Welcome to Stu's CTI CTF ###
+ \______/   \___/   \______/ |_______/        \______/    |__/   |______/       \______/    |__/   |__/  
+            </pre>
+        </div>
+        <div class="terminal-text">
+            Welcome to Stu's CTI CTF
 
-Available Challenges:
-- <a href="challenges/threat-actor-research.html">Threat Actor Research</a>
-- <a href="challenges/malware-analysis.html">Malware Analysis</a>
-- <a href="challenges/network-forensics.html">Network Forensics</a>
-        </pre>
+            Available Challenges:
+            - <a href="challenges/threat-actor-research.html">Threat Actor Research</a>
+            - <a href="challenges/malware-analysis.html">Malware Analysis</a>
+            - <a href="challenges/network-forensics.html">Network Forensics</a>
+        </div>
     </div>
 </body>
 </html>
