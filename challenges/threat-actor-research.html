@@ -11,19 +11,12 @@
         }
         .terminal {
             background-color: #000;
-            color: #00FF00;
+            color: #00FF00; /* Green text */
             font-family: 'Courier New', Courier, monospace;
             padding: 20px;
-            min-height: 100vh;
-        }
-        .terminal-header {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .terminal-text {
+            min-height: 100vh; /* Full viewport height */
             font-size: 16px;
-            margin-bottom: 10px;
+            line-height: 1.5;
         }
         .terminal a {
             color: #00FF00;
@@ -32,13 +25,14 @@
         .terminal a:hover {
             text-decoration: underline;
         }
+        .ascii-art {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="terminal">
-        <div class="terminal-header">
-            Threat Actor Research Challenge
-            <pre>
+        <pre class="ascii-art">
     /$$$$$$   /$$                                /$$$$$$  /$$$$$$$$ /$$$$$$        /$$$$$$  /$$$$$$$$ /$$$$$$$$
  /$$__  $$ | $$                               /$$__  $$|__  $$__/|_  $$_/       /$$__  $$|__  $$__/| $$_____/
 | $$  \__//$$$$$$   /$$   /$$  /$$$$$$$      | $$  \__/   | $$     | $$        | $$  \__/   | $$   | $$      
@@ -46,10 +40,8 @@
  \____  $$ | $$    | $$  | $$|  $$$$$$       | $$         | $$     | $$        | $$         | $$   | $$__/   
  /$$  \ $$ | $$ /$$| $$  | $$ \____  $$      | $$    $$   | $$     | $$        | $$    $$   | $$   | $$      
 |  $$$$$$/ |  $$$$/|  $$$$$$/ /$$$$$$$/      |  $$$$$$/   | $$    /$$$$$$      |  $$$$$$/   | $$   | $$      
- \______/   \___/   \______/ |_______/        \______/    |__/   |______/       \______/    |__/   |__/      
-                                                                                                             
-       
-
+ \______/   \___/   \______/ |_______/        \______/    |__/   |______/       \______/    |__/   |__/                                                                                                           
+     
            .--.              .--.
           : (\ ". _......_ ." /) :
            '.    `        `    .'
@@ -61,30 +53,24 @@
             '._ \.' \__/ './ _.'
             /  ``'._-''-_.'``  \
                     `--`
-        
-            </pre>
-        </div>
-        <div class="terminal">
-        <div class="terminal-header">Threat Actor Research Challenge</div>
-        <div class="terminal-text">
-            Mission: Investigate the threat actor "XXXX Bear"
-           
-            Instructions:
-            
-            - Use OSINT techniques to research their activities.
-            - Look for clues in public sources, social media, or simulated reports.
-            - Find the hidden flag to complete the challenge.
+        </pre>
+        <pre>
+Threat Actor Research Challenge: Lets go bear hunting 
 
-            Hints:
-            - xxxx
-            - xxxxx
-            - xxxx.
+Mission: Investigate the threat actor "xxxx."
 
-            Good luck, investigator!
-        </div>
-        <div class="terminal-text">
-            <a href="../index.html">Back to Main Menu</a>
-        </div>
+Instructions:
+- Use OSINT techniques to research their activities.
+- Look for clues in public sources, social media, or simulated reports.
+- Find the hidden flag to complete the challenge.
+
+Hints:
+- xxxxx
+- xxxxx
+- xxxxxx
+
+Good luck, investigator!
+        </pre>
     </div>
 </body>
 </html>
