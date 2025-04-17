@@ -11,12 +11,19 @@
         }
         .terminal {
             background-color: #000;
-            color: #00FF00; /* Green text */
+            color: #00FF00;
             font-family: 'Courier New', Courier, monospace;
             padding: 20px;
-            min-height: 100vh; /* Full viewport height */
+            min-height: 100vh;
+        }
+        .terminal-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .terminal-text {
             font-size: 16px;
-            line-height: 1.5;
+            margin-bottom: 10px;
         }
         .terminal a {
             color: #00FF00;
@@ -25,15 +32,14 @@
         .terminal a:hover {
             text-decoration: underline;
         }
-        .ascii-art {
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
     <div class="terminal">
-        <pre class="ascii-art">
-  /$$$$$$   /$$                                /$$$$$$  /$$$$$$$$ /$$$$$$        /$$$$$$  /$$$$$$$$ /$$$$$$$$
+        <div class="terminal-header">
+            Threat Actor Research Challenge
+            <pre>
+    /$$$$$$   /$$                                /$$$$$$  /$$$$$$$$ /$$$$$$        /$$$$$$  /$$$$$$$$ /$$$$$$$$
  /$$__  $$ | $$                               /$$__  $$|__  $$__/|_  $$_/       /$$__  $$|__  $$__/| $$_____/
 | $$  \__//$$$$$$   /$$   /$$  /$$$$$$$      | $$  \__/   | $$     | $$        | $$  \__/   | $$   | $$      
 |  $$$$$$|_  $$_/  | $$  | $$ /$$_____/      | $$         | $$     | $$        | $$         | $$   | $$$$$   
@@ -56,26 +62,28 @@
             /  ``'._-''-_.'``  \
                     `--`
         
-        
-        
-        </pre>
-        <pre>
-Threat Actor Research Challenge: Lets go bear hunting 
+            </pre>
+        </div>
+        <div class="terminal">
+        <div class="terminal-header">Threat Actor Research Challenge</div>
+        <div class="terminal-text">
+            Mission: Investigate the threat actor "XXXX Bear"
 
-Mission: Investigate the threat actor "XXXX Bear"
+            Instructions:
+            - Use OSINT techniques to research their activities.
+            - Look for clues in public sources, social media, or simulated reports.
+            - Find the hidden flag to complete the challenge.
 
-Instructions:
-- Use OSINT techniques to research their activities.
-- Look for clues in public sources, social media, or simulated reports.
-- Find the hidden flag to complete the challenge.
+            Hints:
+            - Start by searching for mentions of "Shadow Syndicate" online.
+            - Check for any associated IP addresses or domains.
+            - Analyze any available reports or documents for hidden information.
 
-Hints:
-- xxxxx
-- xxxxxxxxxx
-- xxxxxxxx
-
-Good luck, investigator!
-        </pre>
+            Good luck, investigator!
+        </div>
+        <div class="terminal-text">
+            <a href="../index.html">Back to Main Menu</a>
+        </div>
     </div>
 </body>
 </html>
